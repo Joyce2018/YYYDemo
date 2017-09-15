@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "Person.h"
+
 @interface ViewController ()
 
 @end
@@ -16,6 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Person *p = [[Person alloc]init];
+    p.name = @"小明";
+    [p goodDay];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
